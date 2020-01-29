@@ -13,8 +13,12 @@ video: Chapter 2 - Part 3
  
  1) Write down the names of all of the primitives available in C++ (excluding wchar_t)
  put them here: 
- 
- 
+ int
+ bool
+ char
+ double 
+ float
+ unsigned int
  
  
  
@@ -29,7 +33,7 @@ video: Chapter 2 - Part 3
         just ignore wchar_t. you do not need to declare 3 variables of type 'wchar_t'
         'void' is a return type. you do not need to declare 3 variables of type 'void'.
     at the end of the function, pass each variable to the ignoreUnused function
- 
+
 3) write out 10 functions
     each declaration should have a random number of parameters in the function parameter list.
     add { ignoreUnused( ); } after each declaration in place of the closing semicolon
@@ -50,16 +54,38 @@ video: Chapter 2 - Part 3
 
  Wait for my code review.
  */
-
+struct Arm {};
 //2)
 void variableDeclarations()
 {
     //example:
-    int number = 2; //declaration of a primitive named 'number' with an initial value of '2'
-    
-    
-    
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+
+int length = 10;
+int score = 20; 
+int height = -11; 
+ 
+char nameOfSchool [] = {'r', 'o', 'v', 'e', 'r'};
+char firstIntitial = 't';
+char classRoom [] = {'1', 'E'};
+
+float frequency = 67.897652;
+float exactMiles = 3.6456;
+float pointsInPercentage = 2.534;
+
+double refund = 3.53;
+double cashAllowance = 2000.324;
+double distanceTraveled = 1.3515;
+
+bool isReady = true;
+bool isFloating = true;
+bool isEmpty = true;
+
+unsigned int volumeOfStock = 3400;
+unsigned int popultionEstimatedToDie = 78;
+unsigned int stepsTaken = 5000;
+
+int number = 2; //declaration of a primitive named 'number' with an initial value of '2'
+ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
 }
 /*
  10 functions
@@ -74,42 +100,75 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
+void openShop(int storeOwnerId, int shopId, char region  = 'u'){ FIXME see style guide in Readme.MD
+  ignoreUnused(storeOwnerId, shopId, region );
+}
+
 
 /*
  2)
  */
+double rotateArm(int armLength = 5  , double degrees = 30){ FIXME see style guide in Readme.MD
+ ignoreUnused(armLength, degrees );
 
+ return 0;
+}
 /*
  3)
  */
+bool grabItem(float direction, bool gripped= false ){ FIXME see style guide in Readme.MD
+  ignoreUnused(direction, gripped);
 
+  return true;
+}
 /*
  4)
  */
 
+int countSheep(int stableId, int stableSize=0){ FIXME see style guide in Readme.MD
+  ignoreUnused(stableId, stableSize);
+  return 0;
+}
 /*
  5)
  */
-
+bool blendMix(int trackNumber, bool blendSuccess = false){ FIXME see style guide in Readme.MD
+  ignoreUnused(trackNumber, blendSuccess);
+  return blendSuccess;
+}
 /*
  6)
  */
-
+void panTrack(char direction, float amountOfPan = 0){ FIXME see style guide in Readme.MD
+ignoreUnused(direction, amountOfPan);
+}
 /*
  7)
  */
-
+float highPassFilter(double cutOffFreq = 500){ FIXME see style guide in Readme.MD
+  ignoreUnused(cutOffFreq);
+  return {};
+}
 /*
  8)
  */
-
+float lowPassFilter(double cutOffFreq = 200){ FIXME see style guide in Readme.MD
+  ignoreUnused(cutOffFreq);
+  return {};
+}
 /*
  9)
  */
-
+bool createTrack(int inputChannel, int outputChannel = 0){ FIXME see style guide in Readme.MD
+  ignoreUnused(inputChannel, outputChannel);
+}
 /*
  10)
  */
+void createBounce(double audioFormat = 44.1, int bounceChannel = 0 ){ FIXME see style guide in Readme.MD
+  ignoreUnused(audioFormat, bounceChannel);
+}
+
 
 int main()
 {
@@ -117,24 +176,25 @@ int main()
     rentACar(6, 2); 
     
     //1)
-    
+    openShop( 1,  1,  'l');
     //2)
-    
+    rotateArm(4, 45);
     //3)
-    
+    grabItem(-22, true);
     //4)
-    
+    countSheep(9,400);
     //5)
-    
+    blendMix(22, true);
     //6)
-    
+    panTrack('l', 333.55);
     //7)
-    
+    highPassFilter(555.66);
     //8)
-    
+    lowPassFilter(100.456);
     //9)
-    
+    createTrack(3, 0);
     //10)
+    createBounce();
     
     std::cout << "good to go!" << std::endl;
     return 0;    
