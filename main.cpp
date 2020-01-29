@@ -64,13 +64,13 @@ int length = 10;
 int score = 20; 
 int height = -11; 
  
- char nameOfSchool [] = {'r', 'o', 'v', 'e', 'r'};
- char firstIntitial = 't';
- char classRoom [] = {'1', 'E'};
+char nameOfSchool [] = {'r', 'o', 'v', 'e', 'r'};
+char firstIntitial = 't';
+char classRoom [] = {'1', 'E'};
 
- float frequency = 67.897652;
- float exactMiles = 3.6456;
- float pointsInPercentage = 2.534;
+float frequency = 67.897652;
+float exactMiles = 3.6456;
+float pointsInPercentage = 2.534;
 
 double refund = 3.53;
 double cashAllowance = 2000.324;
@@ -84,16 +84,8 @@ unsigned int volumeOfStock = 3400;
 unsigned int popultionEstimatedToDie = 78;
 unsigned int stepsTaken = 5000;
 
-
-
-
-
-
-    int number = 2; //declaration of a primitive named 'number' with an initial value of '2'
-    
-    
-    
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+int number = 2; //declaration of a primitive named 'number' with an initial value of '2'
+ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
 }
 /*
  10 functions
@@ -108,7 +100,7 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
-void openShop(int storeOwnerId, int shopId, char region  = 'u'){
+void openShop(int storeOwnerId, int shopId, char region  = 'u'){ FIXME see style guide in Readme.MD
   ignoreUnused(storeOwnerId, shopId, region );
 }
 
@@ -116,7 +108,7 @@ void openShop(int storeOwnerId, int shopId, char region  = 'u'){
 /*
  2)
  */
-double rotateArm(int armLength = 5  , double degrees = 30){
+double rotateArm(int armLength = 5  , double degrees = 30){ FIXME see style guide in Readme.MD
  ignoreUnused(armLength, degrees );
 
  return 0;
@@ -124,7 +116,7 @@ double rotateArm(int armLength = 5  , double degrees = 30){
 /*
  3)
  */
-bool grabItem(float direction, bool gripped= false ){
+bool grabItem(float direction, bool gripped= false ){ FIXME see style guide in Readme.MD
   ignoreUnused(direction, gripped);
 
   return true;
@@ -133,47 +125,47 @@ bool grabItem(float direction, bool gripped= false ){
  4)
  */
 
-int countSheep(int stableId, int stableSize=0){
+int countSheep(int stableId, int stableSize=0){ FIXME see style guide in Readme.MD
   ignoreUnused(stableId, stableSize);
   return 0;
 }
 /*
  5)
  */
-bool blendMix(int trackNumber, bool blendSuccess = false){
+bool blendMix(int trackNumber, bool blendSuccess = false){ FIXME see style guide in Readme.MD
   ignoreUnused(trackNumber, blendSuccess);
   return blendSuccess;
 }
 /*
  6)
  */
-void panTrack(char direction, float amountOfPan = 0){
+void panTrack(char direction, float amountOfPan = 0){ FIXME see style guide in Readme.MD
 ignoreUnused(direction, amountOfPan);
 }
 /*
  7)
  */
-float highPassFilter(double cutOffFreq = 500){
+float highPassFilter(double cutOffFreq = 500){ FIXME see style guide in Readme.MD
   ignoreUnused(cutOffFreq);
   return {};
 }
 /*
  8)
  */
-float lowPassFilter(double cutOffFreq = 200){
+float lowPassFilter(double cutOffFreq = 200){ FIXME see style guide in Readme.MD
   ignoreUnused(cutOffFreq);
   return {};
 }
 /*
  9)
  */
-bool createTrack(int inputChannel, int outputChannel = 0){
+bool createTrack(int inputChannel, int outputChannel = 0){ FIXME see style guide in Readme.MD
   ignoreUnused(inputChannel, outputChannel);
 }
 /*
  10)
  */
-void createBounce(double audioFormat = 44.1, int bounceChannel = 0 ){
+void createBounce(double audioFormat = 44.1, int bounceChannel = 0 ){ FIXME see style guide in Readme.MD
   ignoreUnused(audioFormat, bounceChannel);
 }
 
