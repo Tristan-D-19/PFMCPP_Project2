@@ -54,38 +54,41 @@ video: Chapter 2 - Part 3
 
  Wait for my code review.
  */
-struct Arm {};
+struct Arm 
+{
+
+};
 //2)
 void variableDeclarations()
 {
     //example:
-
-int length = 10;
-int score = 20; 
-int height = -11; 
+    
+    int length = 10;
+    int score = 20; 
+    int height = -11; 
  
-char nameOfSchool [] = {'r', 'o', 'v', 'e', 'r'};
-char firstIntitial = 't';
-char classRoom [] = {'1', 'E'};
+    char nameOfSchool [] = {'r', 'o', 'v', 'e', 'r'};
+    char firstIntitial = 't';
+    char classRoom [] = {'1', 'E'};
 
-float frequency = 67.897652;
-float exactMiles = 3.6456;
-float pointsInPercentage = 2.534;
+    float frequency = 67.897652;
+    float exactMiles = 3.6456;
+    float pointsInPercentage = 2.534;
 
-double refund = 3.53;
-double cashAllowance = 2000.324;
-double distanceTraveled = 1.3515;
+    double refund = 3.53;
+    double cashAllowance = 2000.324;
+    double distanceTraveled = 1.3515;
 
-bool isReady = true;
-bool isFloating = true;
-bool isEmpty = true;
+    bool isReady = true;
+    bool isFloating = true;
+    bool isEmpty = true;
 
-unsigned int volumeOfStock = 3400;
-unsigned int popultionEstimatedToDie = 78;
-unsigned int stepsTaken = 5000;
+    unsigned int volumeOfStock = 3400;
+    unsigned int popultionEstimatedToDie = 78;
+    unsigned int stepsTaken = 5000;
 
-int number = 2; //declaration of a primitive named 'number' with an initial value of '2'
-ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+    int number = 2; //declaration of a primitive named 'number' with an initial value of '2'
+    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
 }
 /*
  10 functions
@@ -100,81 +103,90 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
-void openShop(int storeOwnerId, int shopId, char region  = 'u'){ FIXME see style guide in Readme.MD
-  ignoreUnused(storeOwnerId, shopId, region );
+void openShop(int storeOwnerId, int shopId, char region= 'u')
+{ 
+ 
+    ignoreUnused(storeOwnerId, shopId, region );
 }
 
 
 /*
  2)
  */
-double rotateArm(int armLength = 5  , double degrees = 30){ FIXME see style guide in Readme.MD
- ignoreUnused(armLength, degrees );
-
- return 0;
+double rotateArm(int armLength = 5  , double degrees = 30)
+{ 
+    ignoreUnused(armLength, degrees );
+    return 0;
 }
 /*
  3)
  */
-bool grabItem(float direction, bool gripped= false ){ FIXME see style guide in Readme.MD
-  ignoreUnused(direction, gripped);
-
-  return true;
+bool grabItem(float direction, bool gripped= false )
+{ 
+    ignoreUnused(direction, gripped);
+    return true;
 }
 /*
  4)
  */
 
-int countSheep(int stableId, int stableSize=0){ FIXME see style guide in Readme.MD
-  ignoreUnused(stableId, stableSize);
-  return 0;
+int countSheep(int stableId, int stableSize=0)
+{ 
+    ignoreUnused(stableId, stableSize);
+    return 0;
 }
 /*
  5)
  */
-bool blendMix(int trackNumber, bool blendSuccess = false){ FIXME see style guide in Readme.MD
-  ignoreUnused(trackNumber, blendSuccess);
-  return blendSuccess;
+bool blendMix(int trackNumber, bool blendSuccess = false)
+{
+    ignoreUnused(trackNumber, blendSuccess);
+    return blendSuccess;
 }
 /*
  6)
  */
-void panTrack(char direction, float amountOfPan = 0){ FIXME see style guide in Readme.MD
-ignoreUnused(direction, amountOfPan);
+void panTrack(char direction, float amountOfPan = 0)
+{ 
+    ignoreUnused(direction, amountOfPan);
 }
 /*
  7)
  */
-float highPassFilter(double cutOffFreq = 500){ FIXME see style guide in Readme.MD
-  ignoreUnused(cutOffFreq);
-  return {};
+float highPassFilter(double cutOffFreq = 500)
+{ 
+    ignoreUnused(cutOffFreq);
+    return {};
 }
 /*
  8)
  */
-float lowPassFilter(double cutOffFreq = 200){ FIXME see style guide in Readme.MD
-  ignoreUnused(cutOffFreq);
-  return {};
+float lowPassFilter(double cutOffFreq = 200)
+{ 
+    ignoreUnused(cutOffFreq);
+    return {};
 }
 /*
  9)
  */
-bool createTrack(int inputChannel, int outputChannel = 0){ FIXME see style guide in Readme.MD
-  ignoreUnused(inputChannel, outputChannel);
+bool createTrack(int inputChannel, int outputChannel = 0)
+{ 
+    ignoreUnused(inputChannel, outputChannel);
+    return false;
 }
 /*
  10)
  */
-void createBounce(double audioFormat = 44.1, int bounceChannel = 0 ){ FIXME see style guide in Readme.MD
-  ignoreUnused(audioFormat, bounceChannel);
+void createBounce(double audioFormat = 44.1, int bounceChannel = 0)
+{ 
+    ignoreUnused(audioFormat, bounceChannel);
 }
 
 
 int main()
 {
     //example of calling that function
-    rentACar(6, 2); 
-    
+    rentACar(6, 2);   
     //1)
     openShop( 1,  1,  'l');
     //2)
@@ -186,7 +198,7 @@ int main()
     //5)
     blendMix(22, true);
     //6)
-    panTrack('l', 333.55);
+    panTrack('l', 333.55f);
     //7)
     highPassFilter(555.66);
     //8)
